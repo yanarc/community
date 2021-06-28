@@ -7,13 +7,10 @@ public class Page {
 
     // 当前页码
     private int current = 1;
-
-    // 每一页显示的上限
+    // 显示上限
     private int limit = 10;
-
-    // 数据总数(用于计算总页数，以便显示在当前的页码中)
+    // 数据总数(用于计算总页数)
     private int rows;
-
     // 查询路径(用于复用分页链接)
     private String path;
 
@@ -22,7 +19,7 @@ public class Page {
     }
 
     public void setCurrent(int current) {
-        if (current >= 1) {  // 用户输入的页码数要大于等于1的才能得到处理
+        if (current >= 1) {
             this.current = current;
         }
     }

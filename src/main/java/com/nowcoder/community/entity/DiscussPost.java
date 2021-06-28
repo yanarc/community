@@ -1,7 +1,10 @@
 package com.nowcoder.community.entity;
 
+import lombok.Data;
+
 import java.util.Date;
 
+@Data
 public class DiscussPost {
 
     private int id;

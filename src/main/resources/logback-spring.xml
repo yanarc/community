@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <contextName>community</contextName>
-    <property name="LOG_PATH" value="K:/work/data"/>
+    <property name="LOG_PATH" value="D:/work/data"/>
     <property name="APPDIR" value="community"/>
 
     <!-- error file -->
@@ -70,7 +70,7 @@
         </filter>
     </appender>
 
-    <!-- console 在控制台打印debug级别的日志-->
+    <!-- console -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
             <pattern>%d %level [%thread] %logger{10} [%file:%line] %msg%n</pattern>
